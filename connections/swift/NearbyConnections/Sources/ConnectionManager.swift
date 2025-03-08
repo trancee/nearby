@@ -46,6 +46,9 @@ public class ConnectionManager {
   ///   - strategy: Connection strategy to be used during advertisement or discovery.
   ///   - queue: `DispatchQueue` on which all delegate methods are called. `.main` by default.
   public init(serviceID: String, strategy: Strategy, queue: DispatchQueue = .main) {
+    // https://github.com/google/nearby/issues/1619
+    GNCFlags.enableBLEV2 = true
+
     self.serviceID = serviceID
     self.strategy = strategy
     self.queue = queue

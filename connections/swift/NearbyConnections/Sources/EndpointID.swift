@@ -12,5 +12,5 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-/// Used to represent an enpoint.
+/// Used to represent an endpoint.
 public typealias EndpointID = String

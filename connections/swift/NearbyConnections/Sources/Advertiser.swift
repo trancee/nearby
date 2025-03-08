@@ -205,7 +205,7 @@ public protocol AdvertiserDelegate: AnyObject {
   ///
   /// - Parameters:
   ///   - advertiser: The advertiser object that received a connection request.
-  ///   - endpointID: The endpoint ID of the nearby enpoint that requested the connection.
+  ///   - endpointID: The endpoint ID of the nearby endpoint that requested the connection.
   ///   - context: An arbitrary piece of data received from the nearby endpoint. This can be used to
   ///     provide further information to the user about the nature of the invitation.
   ///   - connectionRequestHandler: A block that your code must call to indicate whether the
